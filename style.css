@@ -1,0 +1,252 @@
+/* This is a reset to standardize the margins and paddings across browsers */
+body {
+background-color: #f8f8f8;
+}
+
+html, body, h1 {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  color: #3b3b3b;
+}
+
+h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+nav, section {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+section {
+  padding: 50px 20px 50px; /* top, left/right, bottom */
+}
+
+/***
+HEADER
+***/
+header {
+  background-color: #DA0851;
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-position: center;
+
+
+  padding: 20px;
+  /* This is equivalent to what I wrote above:
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px; */
+
+  color: #FFFFFF; /* white */
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+}
+header a:hover {
+  color: #d6d6d6;
+}
+header a:active{
+  color: #ffffff;
+}
+
+nav .logo {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.19em;
+  color: #FFFFFF;
+}
+
+.top-menu {
+  margin: 0;
+  padding: 0;
+  float: right;
+  list-style: none;
+  padding: 6px 0px;
+}
+
+.top-menu li {
+  letter-spacing: .05em;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  margin-right: 10px;
+  text-align: right;
+}
+
+.top-menu li:last-child {
+  margin-right: 0px;
+}
+
+.header-content {
+  max-width: 700px;
+
+  margin: 150px auto 200px;
+/*  This centers the element
+
+This is equivalent to what I wrote above:
+  margin-top: 0;
+  margin-left: auto;
+  margin-bottom: 0;
+  margin-right: auto; */
+
+  font-size: 42px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/***
+ABOUT ME
+***/
+section p {
+  font-size: 15px;
+  line-height: 2em;
+  letter-spacing: 0.034666667em;
+}
+
+/***
+PROJECTS
+***/
+.projects {
+  max width: 1000px;
+position: relative;
+}
+
+.projects ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.projects li{
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+  text-align: center;
+}
+
+.projects li img {
+  display: block;
+}
+
+.projects  li span{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.projects h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.poloroid {
+  width: 250px;
+  height: 350px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.15);
+  padding: 20px;
+  position: relative;
+}
+
+/***
+INSTAGRAM
+***/
+
+.poloroids {
+position: relative;
+height: 400px;
+}
+
+.poloroid img {
+  width: 100%;
+}
+
+.poloroid.p1 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  transform: rotate(10deg);
+}
+
+.poloroid.p2 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  transform: rotate(-30deg);
+}
+
+.poloroid.p3 {
+  position: absolute;
+  top: 13px;
+  right: 100px;
+  transform: rotate(20deg);
+}
+
+footer {
+  background-color: #f8f8f8;
+  height: 50px;
+  padding-top: 200px;
+  padding: 20px;
+}
+footer h3 {
+  margin: 0;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+footer li {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+footer li:last-child{
+  margin-right: 0px;
+}
+
+footer li .email {
+color: #3b3b3b;
+text-decoration: none;
+}
+/***
+UTILITIES
+***/
+.t-c {
+  text-align: center;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
