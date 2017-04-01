@@ -38,8 +38,8 @@ section {
 HEADER
 ***/
 header {
-  background-color: #DA0851;
-  background-image: url(background.jpg);
+  background-color: #f8f8f8;
+  /***background-image: url(background.jpg);***/
   background-size: cover;
   background-position: center;
 
@@ -51,18 +51,25 @@ header {
     padding-bottom: 10px;
     padding-right: 10px; */
 
-  color: #FFFFFF; /* white */
+  color: #3b3b3b; /* white */
 }
 
 header a {
-  color: #ffffff;
+  color: #3b3b3b;
   text-decoration: none;
 }
 header a:hover {
   color: #d6d6d6;
 }
 header a:active{
-  color: #ffffff;
+  color: #3b3b3b;
+}
+
+nav {
+  text-align: center;
+  max-width: unset;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 nav .logo {
@@ -71,35 +78,46 @@ nav .logo {
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 0.19em;
-  color: #FFFFFF;
+  color: #3b3b3b;
+  padding-top: 7px;
 }
 
 .top-menu {
   margin: 0;
   padding: 0;
-  float: right;
+  display: block;
   list-style: none;
   padding: 6px 0px;
 }
 
 .top-menu li {
   letter-spacing: .05em;
-  font-size: 14px;
+  font-size: 12px;
   margin: 0;
   padding: 0;
   display: inline-block;
   margin-right: 10px;
-  text-align: right;
 }
 
 .top-menu li:last-child {
   margin-right: 0px;
 }
 
+.top-menu.menu-left {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+.top-menu.menu-right {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
 .header-content {
   max-width: 700px;
 
-  margin: 150px auto 200px;
+  margin: 150px auto 150px;
 /*  This centers the element
 
 This is equivalent to what I wrote above:
@@ -113,6 +131,9 @@ This is equivalent to what I wrote above:
   text-align: center;
 }
 
+.header-content b {
+  color: #3ABADE;
+}
 /***
 ABOUT ME
 ***/
@@ -126,7 +147,8 @@ section p {
 PROJECTS
 ***/
 .projects {
-  max width: 1000px;
+  max-width: 1200px;
+  text-align: center;
 position: relative;
 }
 
@@ -139,25 +161,94 @@ position: relative;
 .projects li{
   display: inline-block;
   vertical-align: top;
-  margin-right: 5px;
   text-align: center;
 }
 
 .projects li img {
   display: block;
-}
-
-.projects  li span{
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 12px;
-}
-
-.projects h5 {
-  font-size: 18px;
-  font-weight: bold;
   margin: 0;
+  padding: 0;
 }
+
+.project-block {
+  display: block;
+  background-position: center;
+  background-size: contains;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 500px;
+  position: relative;
+}
+
+.project-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-text {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.project-block:hover .project-text {
+  opacity: 1;
+  transition: opacity 0.6s ease-in;
+}
+
+
+.project1 {
+  background-color: #4CB7DB;
+  background-image: url(wanderlift_logo.png);
+  background-size: 200px;
+}
+.project1 .project-text {
+  background-color: rgba(76,183,219,0.6);
+}
+
+.project2 {
+  background-color: #DCD3E4;
+  background-image: url(lavenderqueenfairy.jpg);
+  background-size: cover;
+}
+.project2 .project-text {
+  background-color: rgba(220,211,228,0.6);
+}
+.project3 {
+  background-color: #4CB7DB;
+  background-image: url(wanderlift_logo.png);
+  background-size: 200px;
+  width: 1000px;
+}
+.project3 .project-text {
+  background-color: rgba(76,183,219,0.6);
+}
+
+.project4 {
+  background-color: #4CB7DB;
+  background-image: url(wanderlift_logo.png);
+  background-size: 200px;
+}
+.project4 .project-text {
+  background-color: rgba(76,183,219,0.6);
+}
+
+.project5 {
+  background-color: #4CB7DB;
+  background-image: url(wanderlift_logo.png);
+  background-size: 200px;
+}
+.project5 .project-text {
+  background-color: rgba(76,183,219,0.6);
+}
+/***
+INSTAGRAM
+***/
 
 .poloroid {
   width: 250px;
@@ -167,10 +258,6 @@ position: relative;
   padding: 20px;
   position: relative;
 }
-
-/***
-INSTAGRAM
-***/
 
 .poloroids {
 position: relative;
@@ -232,6 +319,16 @@ footer li .email {
 color: #3b3b3b;
 text-decoration: none;
 }
+
+footer a {
+  color: #3b3b3b;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #d8d8d8;
+  text-decoration: none;
+}
 /***
 UTILITIES
 ***/
@@ -249,4 +346,50 @@ UTILITIES
 
 .clear {
   clear: both;
+}
+
+@media screen and (max-width: 1040px) {
+  .project-block {
+    width: 400px;
+    height: 400px;
+    transition: width 0.3s ease, height 0.3s ease;
+  }
+}
+@media screen and (max-width: 840px) {
+  .project-block {
+    width: 350px;
+    height: 350px;
+    transition: width 0.3s ease, height 0.3s ease;
+  }
+}
+@media screen and (max-width: 500px) {
+  .project-block {
+    width: 350px;
+    height: 350px;
+    transition: width 0.3s ease, height 0.3s ease;
+  }
+  .project-block .project-text{
+    color: #ffffff;
+    opacity: 1;
+    background: none;
+    top: unset;
+  }
+  .project-block .project-text h2 {
+    letter-spacing: 0.04em;
+    font-size: 14px;
+  }
+  .header-content {
+    font-size: 35px;
+    margin: 80px 20px;
+    transition: font-size 0.6s ease;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .top-menu.menu-left, .top-menu.menu-right {
+    position: relative;
+    top: unset;
+    left: unset;
+    right: unset;
+  }
 }
