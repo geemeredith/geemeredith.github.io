@@ -117,7 +117,7 @@ nav .logo {
 .header-content {
   max-width: 700px;
 
-  margin: 150px auto 150px;
+  margin: 140px auto 140px;
 /*  This centers the element
 
 This is equivalent to what I wrote above:
@@ -220,22 +220,22 @@ position: relative;
   background-color: rgba(220,211,228,0.6);
 }
 .project3 {
-  background-color: #4CB7DB;
-  background-image: url(wanderlift_logo.png);
-  background-size: 200px;
+  background-color: #EC4E2B;
+  background-image: url(modeling_cover.png);
+  background-size: 300px;
   width: 1000px;
 }
 .project3 .project-text {
-  background-color: rgba(76,183,219,0.6);
+  background-color: rgba(236,78,43,0.6);
 }
 
 .project4 {
-  background-color: #4CB7DB;
-  background-image: url(wanderlift_logo.png);
-  background-size: 200px;
+  background-color: #E6EFEF;
+  background-image: url(forest_drawing.jpg);
+  background-size: cover;
 }
 .project4 .project-text {
-  background-color: rgba(76,183,219,0.6);
+  background-color: rgba(230,239,239,0.6);
 }
 
 .project5 {
