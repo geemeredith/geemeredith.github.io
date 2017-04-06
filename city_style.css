@@ -1,18 +1,29 @@
 /* This is a reset to standardize the margins and paddings across browsers */
 body {
-background-color: #f8f8f8;
+background-color: #0F1D2E;
+background-repeat: no-repeat;
+background-size: contain;
+background-position: top;
 }
 
 html, body, h1 {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  color: #3b3b3b;
+  color: #bc7cbc;
+}
+
+h5 {
+  font-size: 65px;
+  background: -webkit-linear-gradient(#63a6ed, rgba(254, 183, 51, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h2 {
   font-size: 24px;
   text-transform: uppercase;
+  color: #bc7cbc;
 }
 
 h3 {
@@ -39,8 +50,9 @@ HEADER
 ***/
 header {
   background-color: #f8f8f8;
-  /***background-image: url(background.jpg);***/
+  background-image: url(purplechurch3.png);
   background-size: cover;
+  height: 900px;
   background-position: center;
 
 
@@ -55,8 +67,10 @@ header {
 }
 
 header a {
-  color: #3b3b3b;
+  color: #bc7cbc;
+  letter-spacing: 0.1em;
   text-decoration: none;
+  font-family: "Open Sans";
 }
 header a:hover {
   color: #d6d6d6;
@@ -78,7 +92,7 @@ nav .logo {
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 0.19em;
-  color: #3b3b3b;
+  color: #bc7cbc;
   padding-top: 7px;
 }
 
@@ -117,7 +131,7 @@ nav .logo {
 .header-content {
   max-width: 700px;
 
-  margin: 140px auto 140px;
+  margin: 100px auto 140px;
 /*  This centers the element
 
 This is equivalent to what I wrote above:
@@ -132,14 +146,13 @@ This is equivalent to what I wrote above:
 }
 
 .header-content b {
-  color: #3ABADE;
+  color: #f8f8f8;
+  letter-spacing: -0.02em;
+  font-size: 65px;
 }
 /***
 ABOUT ME
 ***/
-.about {
-  padding-bottom: 100px; 
-}
 section p {
   font-size: 15px;
   line-height: 2em;
@@ -179,7 +192,7 @@ position: relative;
   background-size: contains;
   background-repeat: no-repeat;
   height: 500px;
-  width: 500px;
+  width: 250px;
   position: relative;
 }
 
@@ -197,7 +210,6 @@ position: relative;
 .project-text {
   opacity: 0;
   transition: opacity 0.3s ease-out;
-  text-decoration: none;
 }
 
 .project-block:hover .project-text {
@@ -207,96 +219,71 @@ position: relative;
 
 
 .project1 {
-  background-color: #4CB7DB;
-  background-image: url(wanderlift_logo.png);
+  background-image: url(Level1.png);
   background-size: 200px;
-}
-.project1 .project-text {
-  background-color: rgba(76,183,219,0.6);
 }
 
 .project2 {
-  background-color: #DCD3E4;
-  background-image: url(lavenderqueenfairy.jpg);
-  background-size: cover;
-}
-.project2 .project-text {
-  background-color: rgba(220,211,228,0.6);
+  background-image: url(Level2.png);
+  background-size: 200px;
 }
 .project3 {
-  background-color: #EC4E2B;
-  background-image: url(modeling_cover.png);
-  background-size: 300px;
-  width: 1000px;
-}
-.project3 .project-text {
-  background-color: rgba(236,78,43,0.6);
+  background-image: url(Level3.png);
+  background-size: 200px;
 }
 
 .project4 {
-  background-color: #E6EFEF;
-  background-image: url(forest_drawing.jpg);
-  background-size: cover;
+  background-image: url(Upgrades.png);
+  background-size: 200px;
 }
 .project4 .project-text {
   background-color: rgba(230,239,239,0.6);
 }
 
-.project5 {
-  background-color: #0F1D2F;
-  background-image: url(purplechurch3.png);
-  background-size: 300px;
+form {
+  text-align: center;
 }
-.project5 .project-text {
-  background-color: rgba(15, 29, 47,0.6);
-  color: #4c4c4c;
-  text-decoration: none;
-}
-/***
-INSTAGRAM
-***/
+/#subscribe {
+    display: block;
+    margin: 20px auto 110px auto;
 
-.poloroid {
-  width: 250px;
-  height: 350px;
-  background-color: #ffffff;
-  box-shadow: 0px 0px 20px rgba(0,0,0,0.15);
-  padding: 20px;
-  position: relative;
+}
+#subscribe h3 {
+    font-size: 18px;
+    font-family:
+    margin-bottom: 35px;
+    color: #af80af;
 }
 
-.poloroids {
-position: relative;
-height: 400px;
+#subscribe .text {
+  font-family: "HK Grotesk Pro";
+    padding: 14px;
+    width: 290px;
+    background-color: #7e6396 ;
+    font-size: 18px;
+    border: none;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+
 }
 
-.poloroid img {
-  width: 100%;
+#subscribe .submit {
+    font-family: "HK Grotesk Pro";
+    font-size: 18px;
+    height: 50px;
+    width: 140px;
+    background-color: #af80af;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
 }
 
-.poloroid.p1 {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  transform: rotate(10deg);
-}
-
-.poloroid.p2 {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  transform: rotate(-30deg);
-}
-
-.poloroid.p3 {
-  position: absolute;
-  top: 13px;
-  right: 100px;
-  transform: rotate(20deg);
+.game-description {
+  text-align: center;
 }
 
 footer {
-  background-color: #f8f8f8;
+  background-color: #0F1D2E;
   height: 50px;
   padding-top: 200px;
   padding: 20px;
@@ -315,16 +302,18 @@ footer ul {
 footer li {
   display: inline-block;
   margin-right: 50px;
-  color: #3b3b3b;
-  text-decoration: none;
 }
 
 footer li:last-child{
   margin-right: 0px;
 }
 
+footer li .email {
+text-decoration: none;
+}
+
 footer a {
-  color: #3b3b3b;
+  color: #bc7cbc;
   text-decoration: none;
 }
 
